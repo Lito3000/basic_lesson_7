@@ -77,7 +77,7 @@ body a , h1,p{
     margin-top: 50px;
 }
 .super__chair{
-    height: 400px ;
+    height: 500px ;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -88,13 +88,13 @@ body a , h1,p{
     display: flex;
 }
 .super__chair__content p{
-width: 300px;
+width: 330px;
     color: white;
 }
 .super__chair__info{
     align-items: center;
     display: flex;
-    height: 400px;
+    height: 500px;
 }
 .super__chair__content h1{
     color: white;
@@ -115,12 +115,6 @@ width: 300px;
     width: 150px;
     font-weight: bold;
     font-size: 22px;
-}
-.offers__info{
-    /*align-items: center;*/
-    /*display: flex;*/
-    /*!*height: 100px;*!*/
-    /*flex-direction: column;*/
 }
 .team__member{
     display: flex;
