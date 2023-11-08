@@ -1,38 +1,142 @@
-a {
+body a , h1,p{
+    color: #000;
+    font-family: Roboto,sans-serif;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
     text-decoration: none;
+    transition: 0.3s;
 }
 .header{
     background-color: #f5f1f1;
+    padding: 13px 0;
+}
+.offers{
+    background-color: #f5f1f1;
+}
+.salon{
+    padding: 13px 0;
 }
 .container{
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    height: 50px;
-    max-width: 1920px;
-    /* margin: 0 auto; */
-    /* padding: 2px 15px; */
-    font-family: Tahoma, sans-serif;
+    max-width: 1110px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 15px;
 }
-.container h2{
-    text-align: center;
-}
-.header__menu{
-    justify-content: center;
-    display: flex;
-}
-.header__menu ul{
+.header__menu ul,.salon__menu ul{
     list-style: none;
     display: flex;
     justify-content: center;
     gap: 30px;
-    width: 360px;
-    height: 17px;
 }
-.header__menu a{
-    color: #333333;
-    transition: 0.3s;
-}
-.header__menu a:hover{
+.header__menu a:hover,
+.salon__menu a:hover{
     color: red;
+}
+.org{
+    padding: 30px 0 30px 0;
+}
+.org__content{
+    display: flex;
+    flex-wrap: wrap;
+}
+.org__info,.org__video{
+    width: 50%;
+    display: flex;
+}
+.org__video{
+    justify-content: right;
+    align-items: center;
+    gap:23px;
+}
+.org__video button{
+    background-color:white;
+    border-radius: 40px;
+    transition: 0.3s;
+    border: 2px solid red ;
+    width: 170px;
+    height: 40px;
+}
+.org__video button:hover{
+    background-color: #f13c6e;
+    border: 2px solid white;
+    color: white;
+}
+.super__chair__content button:hover{
+    background-color: white;
+    border: 2px solid #f13c6e;
+    color: #f13c6e;
+}
+.org:after{
+    content: '';
+    display: block;
+    height: 2px;
+    background-color: #f5f1f1;
+    width: 100%;
+    margin-top: 50px;
+}
+.super__chair{
+    height: 400px ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.super__chair__content{
+    gap: 40px;
+    flex-direction: column;
+    display: flex;
+}
+.super__chair__content p{
+width: 300px;
+    color: white;
+}
+.super__chair__info{
+    align-items: center;
+    display: flex;
+    height: 400px;
+}
+.super__chair__content h1{
+    color: white;
+    font-weight: bold;
+    font-size: 36px;
+    text-transform: uppercase;
+}
+.super__chair__content button{
+    background-color: #f13c6e;
+    border-radius: 40px;
+    transition: 0.3s;
+    border: 2px solid white ;
+    width: 170px;
+    height: 40px;
+    color: white;
+}
+.offers__info h1{
+    width: 150px;
+    font-weight: bold;
+    font-size: 22px;
+}
+.offers__info{
+    /*align-items: center;*/
+    /*display: flex;*/
+    /*!*height: 100px;*!*/
+    /*flex-direction: column;*/
+}
+.team__member{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 26px;
+}
+.future__team{
+    width: 250px;
+    height: 363px;
+    background-color: #6f6d6d;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.offers__special{
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    height: 100px;
 }

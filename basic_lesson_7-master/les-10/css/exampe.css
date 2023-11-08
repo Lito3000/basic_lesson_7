@@ -1,0 +1,46 @@
+* {
+    box-sizing: border-box;
+}
+
+.container {
+    width: 100%;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.about .content {
+    display: flex;
+    gap: 10px;
+}
+
+.about__item {
+    border: 5px solid deeppink;
+    padding: 10px;
+    background-color: pink;
+}
+
+@media (max-width: 1100px) {
+    .container {
+        max-width: 992px;
+    }
+}
+
+
+@media (max-width: 992px) {
+    .container {
+        max-width: 576px;
+    }
+    .about .content {
+        flex-direction: column;
+    }
+
+}
+
+
+@media (max-width: 576px) {
+    .about__item {
+        border-radius: 10px;
+        background-color: palegreen;
+    }
+}
