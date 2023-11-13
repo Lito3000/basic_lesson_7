@@ -1,4 +1,4 @@
-body a , h1,p{
+body,a,h1,p{
     color: #000;
     font-family: Roboto,sans-serif;
     font-size: 15px;
@@ -8,15 +8,15 @@ body a , h1,p{
     text-decoration: none;
     transition: 0.3s;
 }
-.header{
+.header__menu{
     background-color: #f5f1f1;
-    padding: 13px 0;
 }
 .offers{
     background-color: #f5f1f1;
+    padding-bottom: 100px;
 }
-.salon{
-    padding: 13px 0;
+.bonuses,.impls,.recently,.special__offers{
+    padding-top: 100px;
 }
 .container{
     max-width: 1110px;
@@ -24,22 +24,28 @@ body a , h1,p{
     margin: 0 auto;
     padding: 0 15px;
 }
-.header__menu ul,.salon__menu ul{
+.header__menu ul{
     list-style: none;
     display: flex;
     justify-content: center;
-    gap: 30px;
+    gap: 40px;
+    padding: 20px;
+}
+.salon__menu ul{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    padding: 30px;
 }
 .header__menu a:hover,
 .salon__menu a:hover{
     color: red;
 }
-.org{
-    padding: 30px 0 30px 0;
-}
 .org__content{
     display: flex;
     flex-wrap: wrap;
+    padding: 20px;
 }
 .org__info,.org__video{
     width: 50%;
@@ -63,7 +69,9 @@ body a , h1,p{
     border: 2px solid white;
     color: white;
 }
-.super__chair__content button:hover{
+.super__chair__content button:hover,
+.catalog__item button:hover,
+.get__visit button:hover {
     background-color: white;
     border: 2px solid #f13c6e;
     color: #f13c6e;
@@ -74,35 +82,40 @@ body a , h1,p{
     height: 2px;
     background-color: #f5f1f1;
     width: 100%;
-    margin-top: 50px;
 }
 .super__chair{
-    height: 500px ;
+    height: 605px ;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+    align-items: center;
+    display: flex;
 }
 .super__chair__content{
     gap: 40px;
     flex-direction: column;
     display: flex;
 }
-.super__chair__content p{
-width: 330px;
+.super__chair__content p,
+.catalog__btn p{
+    width: 330px;
     color: white;
 }
-.super__chair__info{
-    align-items: center;
-    display: flex;
-    height: 500px;
+.get__visit p,
+.get__bonuses p {
+    width: 170px;
+    color: white;
 }
-.super__chair__content h1{
+.super__chair__content h1,
+.catalog__btn h1{
     color: white;
     font-weight: bold;
     font-size: 36px;
     text-transform: uppercase;
 }
-.super__chair__content button{
+.super__chair__content button ,
+.catalog__item button,
+.get__visit button{
     background-color: #f13c6e;
     border-radius: 40px;
     transition: 0.3s;
@@ -112,25 +125,70 @@ width: 330px;
     color: white;
 }
 .offers__info h1{
-    width: 150px;
     font-weight: bold;
     font-size: 22px;
+    margin-bottom: 25px;
 }
-.team__member{
+.team__member,.bonuses__info{
     display: flex;
-    flex-wrap: wrap;
-    gap: 26px;
+    justify-content: space-between;
 }
-.future__team{
-    width: 250px;
-    height: 363px;
-    background-color: #6f6d6d;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-.offers__special{
-    justify-content: center;
+.catalog__item{
+    width: calc(1020px/4);
+    height: calc(1452px/4);
+    background-color: #FFFFFF;
     display: flex;
     flex-direction: column;
-    height: 100px;
+    align-items: center;
+    gap: 15px;
+    }
+.catalog__item img{
+    padding: 15px 65px;
+}
+.catalog__item p{
+    width: 180px;
+    text-align: center;
+}
+.get__bonuses,.get__visit{
+    align-items: center;
+    padding: 35px 40px;
+    width: 530px;
+    height: 212px;
+    display: flex;
+    justify-content: space-between;
+}
+.bonuses__inter__text,
+.bonuses__log__text{
+    font-family: Roboto,sans-serif;
+    color: white;
+    font-size: 14px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    max-width: 250px;
+    width: 100%;
+}
+.bonuses__inter__text input{
+    border-radius: 30px;
+    border-style: none;
+    width: 225px;
+    height: 35px;
+    text-align: center;
+}
+.impls__gallary{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+    justify-content: space-between;
+}
+.impl__gallary__img{
+    width: calc(1060px/4);
+    height: calc(440px/4);
+    background-color: white;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
