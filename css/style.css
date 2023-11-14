@@ -168,12 +168,14 @@ body,a,h1,p{
     max-width: 250px;
     width: 100%;
 }
-.bonuses__inter__text input{
+.bonuses__inter__text form input{
     border-radius: 30px;
-    border-style: none;
+    /*border-style: none;*/
+    padding: 20px 15px;
+    border: none;
     width: 225px;
     height: 35px;
-    text-align: center;
+    outline: none;
 }
 .impls__gallary{
     display: flex;
@@ -192,3 +194,4 @@ body,a,h1,p{
     justify-content: center;
     align-items: center;
 }
+.
